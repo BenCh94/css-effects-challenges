@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transforms</title>
+	<style type="text/css">
+		#container{
+			display: flex;
+			justify-content: space-around;
+		}
+		.content-box{
+			height: 200px;
+			flex-direction: row;
+			border: dashed black 2px;
+			text-align: center;
+			font-size: 60px;
+			margin-top: 50px;
+		}
+		#one{
+			background: linear-gradient(to bottom, #70A232, #992F5A);
+			transform: translate(50px, 100px);
+		}
+		#two{
+			background: linear-gradient(to right, #992F5A 2%, #FFFF35 20%, #77B2D8 50%, #FFA635 70%, #FF0202 100% );
+			transform: skew(20deg,35deg);
+		}
+		#three{
+			background: linear-gradient(-45deg, #FFED21, #FF2A06);
+			transform: rotate(30deg);
+		}
+		#four{
+			background: radial-gradient(#5f2c82, #3498db);
+			transform: scale(2,0.5);
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="content-box" id="one">Translated</div>
+		<div class="content-box" id="two">Skewed</div>
+		<div class="content-box" id="three">Rotated</div>
+		<div class="content-box" id="four">Scaled</div>
+	</div>
+</body>
+</html>
